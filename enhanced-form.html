@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhanced HTML5 form with structured content, accessibility, and SEO-friendly layout.">
+    <title>Enhanced Form Example</title>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Form Example</h1>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#registration-form">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About This Form</h2>
+        <p>This page demonstrates a fully accessible, semantic HTML5 form with proper structure and validation features. It also includes lists, tables, and media for demonstration purposes.</p>
+    </section>
+
+    <section id="features">
+        <h2>Form Features</h2>
+        <ul>
+            <li>Multiple input types: text, email, password, date, number, file upload.</li>
+            <li>Built-in HTML5 validation with <code>required</code>, <code>readonly</code>, and <code>autocomplete</code> attributes.</li>
+            <li>Accessible semantic structure with headings and ARIA attributes.</li>
+        </ul>
+
+        <h3>Sample Pricing Table</h3>
+        <table>
+            <caption>Registration Packages</caption>
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Price</th>
+                    <th>Benefits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>$10</td>
+                    <td>Email support, Community access</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>$30</td>
+                    <td>Priority support, Downloadable resources</td>
+                </tr>
+                <tr>
+                    <td>Pro</td>
+                    <td>$50</td>
+                    <td>1-on-1 coaching, All features included</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Demo Image</h3>
+        <figure>
+            <img src="https://via.placeholder.com/400x200" alt="Sample placeholder image">
+            <figcaption>An example placeholder image included for demonstration.</figcaption>
+        </figure>
+    </section>
+
+    <section id="registration-form">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required autocomplete="email">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890" required autocomplete="tel">
+
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+
+                <label for="readonly-field">Registration ID:</label>
+                <input type="text" id="readonly-field" name="regid" value="REG-12345" readonly>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <p>Choose your package:</p>
+                <label><input type="radio" name="package" value="basic" required> Basic</label>
+                <label><input type="radio" name="package" value="premium"> Premium</label>
+                <label><input type="radio" name="package" value="pro"> Pro</label>
+
+                <p>Select additional services:</p>
+                <label><input type="checkbox" name="extras" value="newsletter"> Monthly Newsletter</label>
+                <label><input type="checkbox" name="extras" value="updates"> Product Updates</label>
+                <label><input type="checkbox" name="extras" value="events"> Event Invitations</label>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                </select>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4"></textarea>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+            </fieldset>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+</main>
+
+<footer id="contact">
+    <p>&copy; 2025 Enhanced Form Example. All rights reserved.</p>
+    <address>
+        Contact us: <a href="mailto:info@example.com">info@example.com</a>
+    </address>
+</footer>
+
+</body>
+</html>
